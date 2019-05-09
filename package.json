@@ -1,0 +1,7 @@
+{
+  "name": "untitled",
+  "private": true,
+  "dependencies": {
+    "bulma-carousel": "^4.0.4"
+  }
+}
