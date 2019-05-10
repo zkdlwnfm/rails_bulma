@@ -1,1 +1,16 @@
 @import "bulma";
+
+.introduce {
+  background-image: asset-data-url('index_background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+
+  @media only screen and (min-width: 1150px)  {
+    body {
+      background-image: asset-data-url('index_background.jpg');
+    }
+  }
+}

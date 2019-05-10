@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
 <head>
 
   <%= csrf_meta_tags %>
@@ -9,7 +9,7 @@
   <!-- for use bulma responsice viewport -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Bulma!</title>
+  <title>인프런 - 배우고 나누고 성장하세요!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="#">
         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
@@ -33,32 +33,32 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
+        <!--<a class="navbar-item">
           Home
         </a>
 
         <a class="navbar-item">
           Documentation
-        </a>
+        </a>-->
 
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
-            More
+            <b><%= I18n.t("nav.title") %></b>
           </a>
 
           <div class="navbar-dropdown">
             <a class="navbar-item">
-              About
+              <%= I18n.t("nav.category_1") %>
             </a>
             <a class="navbar-item">
-              Jobs
+              <%= I18n.t("nav.category_2") %>
             </a>
             <a class="navbar-item">
-              Contact
+              <%= I18n.t("nav.category_3") %>
             </a>
-            <hr class="navbar-divider">
+            <!--<hr class="navbar-divider">-->
             <a class="navbar-item">
-              Report an issue
+              <%= I18n.t("nav.category_4") %>
             </a>
           </div>
         </div>
@@ -79,86 +79,44 @@
     </div>
   </nav>
 
-  <section class="hero is-primary is-medium has-bg-img">
+  <section class="hero is-medium home_top is-light">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Medium title
+          인프런에서 가치를 높이세요.
         </h1>
+        <div class="field has-addons search_courses">
+          <div class="control main_search_container">
+            <input class="input main_search is-large" type="text" placeholder="배우고 싶은 지식을 검색해 보세요.">
+          </div>
+          <div class="control">
+            <a class="button is-link is-large main_search_btn">
+              <i class="far fa-search"></i>
+            </a>
+          </div>
+        </div>
         <h2 class="subtitle">
-          Medium subtitle
+          배우고 싶은 기술이 있다면, 무엇이든 어디에서든
         </h2>
       </div>
     </div>
   </section>
 
-  <!-- Start Hero Carousel -->
-  <section class="hero is-medium has-carousel">
-    <div id="carousel-demo" class="hero-carousel">
-      <div class="item-1">
-        src1
-        <!-- Slide Content -->
-      </div>
-      <div class="item-2">
-        src2
-        <!-- Slide Content -->
-      </div>
-      <div class="item-3">
-        src3
-        <!-- Slide Content -->
-      </div>
+  <%= render 'categories/index' %>
 
-      <div class="item-3">
-        src4
-        <!-- Slide Content -->
-      </div>
-
-      <div class="item-3">
-        src5
-        <!-- Slide Content -->
-      </div>
-
-      <div class="item-3">
-        src6
-        <!-- Slide Content -->
-      </div>
-
-      <div class="item-3">
-        src7
-        <!-- Slide Content -->
-      </div>
-      <div class="item-3">
-        src8
-        <!-- Slide Content -->
-      </div>
-
-      <div class="item-3">
-        src9
-        <!-- Slide Content -->
-      </div>
-
-      <div class="item-3">
-        src10
-        <!-- Slide Content -->
+  <section class="hero introduce is-medium is-bold">
+    <div class="hero-body introduce">
+      <div class="container">
+        <div class="columns is-centered is-mobile">
+          <div class="column is-9-tablet">
+            <h1>우리는 성장 기회의<br class="is-hidden-tablet"> 평등을 추구합니다.</h1>
+            <p>경제적, 시간적 제약없는 양질의 교육으로<br>누구에게나 성장 기회를
+              균등하게 주는 것! 그것이 우리의 목표입니다.<br>입문부터 현업에서 활용 가능한 최고의 지식들을 학습해 보세요.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="hero-head"></div>
-    <div class="hero-body"></div>
-    <div class="hero-foot"></div>
   </section>
-  <!-- End Hero Carousel -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
-  <script>
-      bulmaCarousel.attach('#carousel-demo', {
-          slidesToScroll: 1,
-          slidesToShow: 4,
-          navigationSwipe: "MM/DD/YYYY",
-          infinite: true,
-          autoplay: true,
-          autoplaySpeed: 3000,
-      });
-  </script>
 
   <%= render 'posts/index' %>
 <%= yield %>

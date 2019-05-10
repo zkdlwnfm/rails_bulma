@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   controller :posts do
     get 'posts', action: :index
   end
+
+  controller :categories do
+    get 'categories', action: :index
+  end
 end
