@@ -16,7 +16,7 @@
 @import "bulma";
 
 .introduce {
-  background-image: asset-data-url('index_background.jpg');
+  background-image: asset-data-url('background.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   //background-attachment: fixed;
@@ -24,7 +24,27 @@
 
   @media only screen and (min-width: 1150px)  {
     body {
-      background-image: asset-data-url('index_background.jpg');
+      background-image: asset-data-url('background.jpg');
     }
   }
 }
+
+.main_search_container {
+  width: 50%;
+}
+
+.main_search_btn {
+
+}
+
+/* 개별 css 적용*/
+/*.main_search {
+  text-align: center;
+}*/
+
+.carousel_image {
+  padding: 10px;
+}
+
+/* 모든 input 의 placeholder 부분에 css 적용 */
+input::placeholder { text-align: center; }

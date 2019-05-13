@@ -1,42 +1,44 @@
 <!-- Start Hero Carousel -->
-<section class="hero is-medium has-carousel">
-  <div id="carousel-demo" class="hero-carousel">
-    <div class="item-1">
-      <figure class="image">
-        <a href="#"><img src="https://cdn.inflearn.com/assets/images/main/main_curation_1.jpg" alt="웹 개발"></a>
-      </figure>
-      <!-- Slide Content -->
-    </div>
-    <div class="item-2">
-      <figure class="image">
-        <a href="#"><img src="https://cdn.inflearn.com/assets/images/main/main_curation_2.jpg" alt="웹 개발"></a>
-      </figure>
-      <!-- Slide Content -->
-    </div>
-    <div class="item-3">
-      <figure class="image">
-        <a href="#"><img src="https://cdn.inflearn.com/assets/images/main/main_curation_3.jpg" alt="웹 개발"></a>
-      </figure>
-      <!-- Slide Content -->
-    </div>
+<section class="hero-body is-small has-carousel section">
+  <div class="container">
+    <!-- Start Carousel -->
+    <div id="carousel-demo" class="hero-carousel">
+      <div class="column">
+        <figure class="image">
+          <a href="https://pjhdev.com"><img src="https://cdn.inflearn.com/assets/images/main/main_curation_1.jpg" alt="웹 개발"></a>
+        </figure>
+      </div>
 
-    <div class="item-4">
-      <figure class="image">
-        <a href="#"><img src="https://cdn.inflearn.com/assets/images/main/main_curation_4.jpg" alt="웹 개발"></a>
-      </figure>
-      <!-- Slide Content -->
-    </div>
+      <div class="column">
+        <figure class="image">
+          <a href="https://pjhdev.com:8081"><img src="https://cdn.inflearn.com/assets/images/main/main_curation_2.jpg" alt="웹 개발"></a>
+        </figure>
+        <!-- Slide Content -->
+      </div>
 
-    <div class="item-5">
-      <figure class="image">
-        <a href="#"><img src="https://cdn.inflearn.com/assets/images/main/main_curation_5.jpg" alt="웹 개발"></a>
-      </figure>
-      <!-- Slide Content -->
+      <div class="column">
+        <figure class="image">
+          <a href="https://pjhdev.com:8082"><img src="https://cdn.inflearn.com/assets/images/main/main_curation_3.jpg" alt="웹 개발"></a>
+        </figure>
+        <!-- Slide Content -->
+      </div>
+
+      <div class="column">
+        <figure class="image">
+          <a href="https://pjhdev.com:8083"><img src="https://cdn.inflearn.com/assets/images/main/main_curation_4.jpg" alt="웹 개발"></a>
+        </figure>
+        <!-- Slide Content -->
+      </div>
+
+      <div class="column">
+        <figure class="image">
+          <a href="https://pjhdev.com:8084"><img src="https://cdn.inflearn.com/assets/images/main/main_curation_5.jpg" alt="웹 개발"></a>
+        </figure>
+        <!-- Slide Content -->
+      </div>
     </div>
+    <!-- End Carousel -->
   </div>
-  <div class="hero-head"></div>
-  <div class="hero-body"></div>
-  <div class="hero-foot"></div>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
@@ -44,10 +46,12 @@
     bulmaCarousel.attach('#carousel-demo', {
         slidesToScroll: 1,
         slidesToShow: 4,
+        navigation: true,
         navigationSwipe: "MM/DD/YYYY",
         infinite: true,
         autoplay: true,
         autoplaySpeed: 3000,
+        pauseOnHover: true,
     });
 </script>
 <!-- End Hero Carousel -->
