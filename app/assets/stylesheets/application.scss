@@ -16,15 +16,22 @@
 @import "bulma";
 
 .introduce {
-  background-image: asset-data-url('background.jpg');
+  font-size: x-large;
+  text-align: right;
+  color: whitesmoke;
+
+  /*max-width: 100%;
+  height: auto;
+  padding-top: calc (300 / 1000 * 100%); !* calc (이미지 높이 ÷ 이미지 가로 × 100 %) *!*/
+
+  background-image: asset-data-url('RailsBanner.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  //background-attachment: fixed;
   background-size: cover;
 
   @media only screen and (min-width: 1150px)  {
     body {
-      background-image: asset-data-url('background.jpg');
+      background-image: asset-data-url('RailsBanner.jpg');
     }
   }
 }
@@ -35,6 +42,19 @@
 
 .main_search_btn {
 
+}
+
+.introduce-content {
+  h3 {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: large;
+  }
+
+  text-align: left;
 }
 
 /* 개별 css 적용*/
