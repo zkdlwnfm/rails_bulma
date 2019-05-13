@@ -37,56 +37,58 @@
   </div>
 </section>
 
-<section class="hero is-medium is-light">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-multiline is-mobile">
-        <div class="column is-half">
-          <div class="introduce-content">
-            <h3>입문자도 비전공자도 쉽게 배울 수 있는 입문 강좌들</h3>
-            <p><br>인프런에선 누구나 쉽게 시작할 수 있습니다. 아무것도 모르는 비전공자도 인프런에선 나만의 서비스를 만들 수 있는 기술을 익힐 수 있습니다.<br><br></p>
-          </div>
-
-          <div class="introduce-content">
-            <h3>입문자도 비전공자도 쉽게 배울 수 있는 입문 강좌들</h3>
-            <p><br>인프런에선 누구나 쉽게 시작할 수 있습니다. 아무것도 모르는 비전공자도 인프런에선 나만의 서비스를 만들 수 있는 기술을 익힐 수 있습니다.<br><br></p>
-          </div>
-
-          <br><br>
-          <div class="columns is-multiline is-mobile introduce-content">
-            <div class="column is-half">
-              <div class="columns is-mobile">
-                <i class="column is-narrow fas fa-4x fa-user-graduate"></i>
-                <span class="column label">총 수강생<span class="column value">100 명</span></span>
-              </div>
-
-              <div class="columns is-mobile">
-                <i class="column is-narrow fas fa-4x fa-file-code"></i>
-                <span class="column label">총 수강생<span class="column value">100 명</span></span>
-              </div>
+<% if session[:mobile_params] %>
+  <section class="hero is-medium is-light">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-multiline is-mobile">
+          <div class="column is-half">
+            <div class="introduce-content">
+              <h3>입문자도 비전공자도 쉽게 배울 수 있는 입문 강좌들</h3>
+              <p><br>인프런에선 누구나 쉽게 시작할 수 있습니다. 아무것도 모르는 비전공자도 인프런에선 나만의 서비스를 만들 수 있는 기술을 익힐 수 있습니다.<br><br></p>
             </div>
 
-            <div class="column is-half">
-              <div class="columns is-mobile">
-                <i class="column is-narrow fas fa-4x fa-users"></i>
-                <span class="column label">총 수강생<span class="column value">101 명</span></span>
+            <div class="introduce-content">
+              <h3>입문자도 비전공자도 쉽게 배울 수 있는 입문 강좌들</h3>
+              <p><br>인프런에선 누구나 쉽게 시작할 수 있습니다. 아무것도 모르는 비전공자도 인프런에선 나만의 서비스를 만들 수 있는 기술을 익힐 수 있습니다.<br><br></p>
+            </div>
+
+            <br><br>
+            <div class="columns is-multiline is-mobile introduce-content">
+              <div class="column is-half">
+                <div class="columns is-mobile">
+                  <i class="column is-narrow fas fa-4x fa-user-graduate"></i>
+                  <span class="column label">총 수강생<span class="column value">100 명</span></span>
+                </div>
+
+                <div class="columns is-mobile">
+                  <i class="column is-narrow fas fa-4x fa-file-code"></i>
+                  <span class="column label">총 수강생<span class="column value">100 명</span></span>
+                </div>
               </div>
 
-              <div class="columns is-mobile">
-                <i class="column is-narrow fas fa-4x fa-piggy-bank"></i>
-                <span class="column label">총 수강생<span class="column value">100 명</span></span>
+              <div class="column is-half">
+                <div class="columns is-mobile">
+                  <i class="column is-narrow fas fa-4x fa-users"></i>
+                  <span class="column label">총 수강생<span class="column value">101 명</span></span>
+                </div>
+
+                <div class="columns is-mobile">
+                  <i class="column is-narrow fas fa-4x fa-piggy-bank"></i>
+                  <span class="column label">총 수강생<span class="column value">100 명</span></span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="column is-half">
-          <%= render 'posts/index' %>
+          <div class="column is-half">
+            <%= render 'posts/index' %>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+<% end %>
 
 <%= render 'categories/index' %>
 
