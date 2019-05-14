@@ -37,7 +37,7 @@
   </div>
 </section>
 
-<% if session[:mobile_params] %>
+<% unless controller.mobile_device? %>
   <section class="hero is-medium is-light">
     <div class="hero-body">
       <div class="container">
@@ -82,7 +82,117 @@
           </div>
 
           <div class="column is-half">
-            <%= render 'posts/index' %>
+            <div class="columns is-multiline is-mobile introduce-content">
+              <div class="column is-half">
+                <div class="card course">
+                  <a class="course_card_front" href="/course/기본적인-머신러닝-딥러닝-강좌">
+                    <div class="card-image">
+                      <figure class="image is_thumbnail">
+                        <img src="https://cdn.inflearn.com/wp-content/uploads/machinelearning1.jpg" alt="모두를 위한 딥러닝 - 기본적인 머신러닝과 딥러닝 강좌">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="course_title">
+                        모두를 위한 딥러닝 - 기본적인 머신러닝과 딥러닝 강좌
+                      </div>
+                      <div class="course_meta">
+                        <div class="rating">
+                          <div class="rating_star">
+
+                          </div>
+                        </div>
+                        <div class="price has-text-right is_float_right">무료</div>
+                        <div class="student_num">13744명</div>
+                        <div class="instructor has-text-right is_float_right">Sung Kim</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+
+
+
+
+                <div class="card course">
+                  <a class="course_card_front" href="/course/기본적인-머신러닝-딥러닝-강좌">
+                    <div class="card-image">
+                      <figure class="image is_thumbnail">
+                        <img src="https://cdn.inflearn.com/wp-content/uploads/machinelearning1.jpg" alt="모두를 위한 딥러닝 - 기본적인 머신러닝과 딥러닝 강좌">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="course_title">
+                        모두를 위한 딥러닝 - 기본적인 머신러닝과 딥러닝 강좌
+                      </div>
+                      <div class="course_meta">
+                        <div class="rating">
+                          <div class="rating_star">
+
+                          </div>
+                        </div>
+                        <div class="price has-text-right is_float_right">무료</div>
+                        <div class="student_num">13744명</div>
+                        <div class="instructor has-text-right is_float_right">Sung Kim</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="column is-half">
+                <div class="card course">
+                  <a class="course_card_front" href="/course/기본적인-머신러닝-딥러닝-강좌">
+                    <div class="card-image">
+                      <figure class="image is_thumbnail">
+                        <img src="https://cdn.inflearn.com/wp-content/uploads/machinelearning1.jpg" alt="모두를 위한 딥러닝 - 기본적인 머신러닝과 딥러닝 강좌">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="course_title">
+                        모두를 위한 딥러닝 - 기본적인 머신러닝과 딥러닝 강좌
+                      </div>
+                      <div class="course_meta">
+                        <div class="rating">
+                          <div class="rating_star">
+
+                          </div>
+                        </div>
+                        <div class="price has-text-right is_float_right">무료</div>
+                        <div class="student_num">13744명</div>
+                        <div class="instructor has-text-right is_float_right">Sung Kim</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="card course">
+                  <a class="course_card_front" href="/course/기본적인-머신러닝-딥러닝-강좌">
+                    <div class="card-image">
+                      <figure class="image is_thumbnail">
+                        <img src="https://cdn.inflearn.com/wp-content/uploads/machinelearning1.jpg" alt="모두를 위한 딥러닝 - 기본적인 머신러닝과 딥러닝 강좌">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="course_title">
+                        모두를 위한 딥러닝 - 기본적인 머신러닝과 딥러닝 강좌
+                      </div>
+                      <div class="course_meta">
+                        <div class="rating">
+                          <div class="rating_star">
+
+                          </div>
+                        </div>
+                        <div class="price has-text-right is_float_right">무료</div>
+                        <div class="student_num">13744명</div>
+                        <div class="instructor has-text-right is_float_right">Sung Kim</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
