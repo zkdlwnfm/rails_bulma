@@ -62,9 +62,34 @@
   text-align: center;
 }*/
 
+/* 모든 input 의 placeholder 부분에 css 적용 */
+input::placeholder { text-align: center; }
+
 .carousel_image {
   padding: 10px;
 }
 
-/* 모든 input 의 placeholder 부분에 css 적용 */
-input::placeholder { text-align: center; }
+.course_title {
+}
+
+.section_title {
+  h3 {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: large;
+  }
+}
+
+.section_description {
+  h3 {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: large;
+  }
+}
