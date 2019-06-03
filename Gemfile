@@ -58,3 +58,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bulma-rails', '~> 0.7.4'
+gem 'imagesLoaded_rails'
+# for image upload
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'simple_form'

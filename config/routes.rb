@@ -7,9 +7,16 @@ Rails.application.routes.draw do
 
   controller :posts do
     get 'posts', action: :index
+    post 'posts', action: :create
+    get 'new', action: :new
+    get 'create', action: :create
   end
 
   controller :categories do
     get 'categories', action: :index
+  end
+
+  controller :users do
+    get 'signup', action: :signup
   end
 end
