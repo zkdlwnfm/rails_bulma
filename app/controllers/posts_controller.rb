@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.find_by(type: "게시판")
+    Rails.logger.info("adsff")
   end
 
   def new
